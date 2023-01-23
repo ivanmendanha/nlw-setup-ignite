@@ -1,22 +1,22 @@
 import './src/lib/dayjs';
 
-import { StyleSheet, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 import { 
-  useFonts, 
-  Inter_400Regular, 
-  Inter_600SemiBold, 
-  Inter_700Bold, 
+  useFonts,
+  Inter_400Regular,
+  Inter_600SemiBold,
+  Inter_700Bold,
   Inter_800ExtraBold
-} from '@expo-google-fonts/inter'
+} from '@expo-google-fonts/inter';
 
 import { Loading } from './src/components/Loading';
 import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    Inter_400Regular, 
-    Inter_600SemiBold, 
-    Inter_700Bold, 
+    Inter_400Regular,
+    Inter_600SemiBold,
+    Inter_700Bold,
     Inter_800ExtraBold
   });
 
@@ -33,13 +33,3 @@ export default function App() {
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#09090A',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#fff'
-  },
-});
